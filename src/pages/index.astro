@@ -1,8 +1,7 @@
 ---
-// Component Imports
-import Counter from "../components/Counter.svelte";
-
 // Full Astro Component Syntax:
+import Nav from "@components/Nav.svelte";
+import Login from "../components/SveltePages/Login.svelte";
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
@@ -12,18 +11,12 @@ import Counter from "../components/Counter.svelte";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
+		<link rel="stylesheet" href="./app.scss" />
 	</head>
 	<body>
-		<main></main>
+		<Nav />
+		<main>
+			<Login />
+		</main>
 	</body>
 </html>

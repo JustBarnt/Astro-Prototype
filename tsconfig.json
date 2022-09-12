@@ -1,14 +1,15 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "allowJs": true,
     "baseUrl": ".",
     "checkJs": true,
     "esModuleInterop": true,
+    "outDir": "dist/",
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": false,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+    "noUnusedLocals": false,
     "preserveValueImports": true,
     "skipLibCheck": true,
     "sourceMap": true,
@@ -30,7 +31,7 @@
   },
   "exclude": [
     "node_modules/*",
-    "dist/*"
+    "dist/*",
   ],
   "include": [
     "src/**/*.d.ts",
@@ -38,6 +39,7 @@
     "src/**/*.js",
     "src/**/*.svelte",
     "src/**/*.astro",
+    "src/**/*"
   ],
   "references": [
     {

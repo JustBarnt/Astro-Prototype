@@ -6,7 +6,8 @@
 	},
 	"include": [
 		"astro.config.mjs",
-		"postcss.config.cjs",
-		".eslintrc.cjs"
+		"svelte.config.ts",
+		".eslintrc.cjs",
+		"postcss.cjs"
 	]
 }
