@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"module": "ESNext",
+		"moduleResolution": "Node"
+	},
+	"include": [
+		"astro.config.mjs",
+		"postcss.config.cjs",
+		".eslintrc.cjs"
+	]
+}
