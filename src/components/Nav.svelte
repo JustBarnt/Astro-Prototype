@@ -79,13 +79,4 @@
 			}
 		}
 	}
-
-	main{
-		display:flex;
-		place-content: center center;
-		flex-flow: column wrap;
-		height: 95vh;
-		margin-top: 5vh;
-	}
-
 </style>

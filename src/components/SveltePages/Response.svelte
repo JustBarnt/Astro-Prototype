@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Licenses from "../components/Licenses.svelte";
-	import License from "../components/License.svelte";
-	import { LICENSE_STORE, USER_SESSION } from "../scripts/stores/stores";
-	import { Utilities } from "../scripts/utilities/Utilities";
-	import { ViewLicense } from "../scripts/controllers/LicenseController";
-	import { Colors } from "../enums/enums";
+	import Licenses from "../Licenses.svelte";
+	import License from "../License.svelte";
+	import { LICENSE_STORE, USER_SESSION } from "../../scripts/stores/stores";
+	import { Utilities } from "../../scripts/utilities/Utilities";
+	import { ViewLicense } from "../../scripts/controllers/LicenseController";
+	import { Colors } from "../../enums/enums";
 
 	const AsyncAwait = Utilities.AsyncDelay;
 	

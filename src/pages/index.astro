@@ -1,7 +1,8 @@
 ---
 // Full Astro Component Syntax:
 import Nav from "@components/Nav.svelte";
-import Login from "../components/SveltePages/Login.svelte";
+import Login from "@components/SveltePages/Login.svelte";
+import "./index.scss";
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
@@ -11,12 +12,23 @@ import Login from "../components/SveltePages/Login.svelte";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="./app.scss" />
 	</head>
 	<body>
-		<Nav />
-		<main>
-			<Login />
-		</main>
+		<div id="app">
+			<Nav />
+			<main>
+				<Login />
+			</main>
+		</div>
 	</body>
 </html>
+
+<style lang="scss">
+	main{
+		display:flex;
+		place-content: center center;
+		flex-flow: column wrap;
+		height: 95vh;
+		margin-top: 5vh;
+	}
+</style>

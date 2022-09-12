@@ -5,9 +5,9 @@
 		"moduleResolution": "Node"
 	},
 	"include": [
-		"astro.config.mjs",
-		"svelte.config.ts",
+		"astro.config.ts",
+		"svelte.config.js",
 		".eslintrc.cjs",
-		"postcss.cjs"
+		"postcss.config.cjs"
 	]
 }

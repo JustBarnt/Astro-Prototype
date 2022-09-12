@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "noEmit": true,
     "allowJs": true,
     "baseUrl": ".",
     "checkJs": true,
@@ -34,12 +36,9 @@
     "dist/*",
   ],
   "include": [
-    "src/**/*.d.ts",
-    "src/**/*.ts",
-    "src/**/*.js",
+    "src/**/*",
     "src/**/*.svelte",
     "src/**/*.astro",
-    "src/**/*"
   ],
   "references": [
     {
